@@ -32,6 +32,12 @@ cc_library(
         "s2regionunion.cc",
     ],
     hdrs = glob(["*.h", "base/*.h", "strings/*.h", "util/math/*.h"]) + ["util/hash/hash_jenkins_lookup2.h"],
+    copts = [
+        "-Wno-absolute-value",
+        "-Wno-dynamic-class-memaccess",
+        "-stdlib=libc++",
+        "-std=c++11",
+    ],
     visibility = ["//visibility:public"],
 )
 
