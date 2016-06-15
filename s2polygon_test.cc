@@ -149,8 +149,8 @@ class S2PolygonTestBase : public testing::Test {
 };
 
 static void CheckContains(string const& a_str, string const& b_str) {
-  S2Polygon* a = MakePolygon(a_str);
-  S2Polygon* b = MakePolygon(b_str);
+  S2Polygon* a = S2Testing::MakePolygon(a_str);
+  S2Polygon* b = S2Testing::MakePolygon(b_str);
   unique_ptr<S2Polygon> delete_a(a);
   unique_ptr<S2Polygon> delete_b(b);
   EXPECT_TRUE(a->Contains(b));
@@ -193,52 +193,52 @@ TEST(S2Polygon, Init) {
 }
 
 S2PolygonTestBase::S2PolygonTestBase():
-    near_0(MakePolygon(kNear0)),
-    near_10(MakePolygon(kNear0 + kNear1)),
-    near_30(MakePolygon(kNear3 + kNear0)),
-    near_32(MakePolygon(kNear2 + kNear3)),
-    near_3210(MakePolygon(kNear0 + kNear2 + kNear3 + kNear1)),
-    near_H3210(MakePolygon(kNear0 + kNear2 + kNear3 + kNearHemi + kNear1)),
+    near_0(S2Testing::MakePolygon(kNear0)),
+    near_10(S2Testing::MakePolygon(kNear0 + kNear1)),
+    near_30(S2Testing::MakePolygon(kNear3 + kNear0)),
+    near_32(S2Testing::MakePolygon(kNear2 + kNear3)),
+    near_3210(S2Testing::MakePolygon(kNear0 + kNear2 + kNear3 + kNear1)),
+    near_H3210(S2Testing::MakePolygon(kNear0 + kNear2 + kNear3 + kNearHemi + kNear1)),
 
-    far_10(MakePolygon(kFar0 + kFar1)),
-    far_21(MakePolygon(kFar2 + kFar1)),
-    far_321(MakePolygon(kFar2 + kFar3 + kFar1)),
-    far_H20(MakePolygon(kFar2 + kFarHemi + kFar0)),
-    far_H3210(MakePolygon(kFar2 + kFarHemi + kFar0 + kFar1 + kFar3)),
+    far_10(S2Testing::MakePolygon(kFar0 + kFar1)),
+    far_21(S2Testing::MakePolygon(kFar2 + kFar1)),
+    far_321(S2Testing::MakePolygon(kFar2 + kFar3 + kFar1)),
+    far_H20(S2Testing::MakePolygon(kFar2 + kFarHemi + kFar0)),
+    far_H3210(S2Testing::MakePolygon(kFar2 + kFarHemi + kFar0 + kFar1 + kFar3)),
 
-    south_0ab(MakePolygon(kSouth0a + kSouth0b)),
-    south_2(MakePolygon(kSouth2)),
-    south_210b(MakePolygon(kSouth2 + kSouth0b + kSouth1)),
-    south_H21(MakePolygon(kSouth2 + kSouthHemi + kSouth1)),
-    south_H20abc(MakePolygon(
+    south_0ab(S2Testing::MakePolygon(kSouth0a + kSouth0b)),
+    south_2(S2Testing::MakePolygon(kSouth2)),
+    south_210b(S2Testing::MakePolygon(kSouth2 + kSouth0b + kSouth1)),
+    south_H21(S2Testing::MakePolygon(kSouth2 + kSouthHemi + kSouth1)),
+    south_H20abc(S2Testing::MakePolygon(
                      kSouth2 + kSouth0b + kSouthHemi + kSouth0a + kSouth0c)),
 
-    nf1_n10_f2_s10abc(MakePolygon(kSouth0c + kFar2 + kNear1 + kNearFar1 +
+    nf1_n10_f2_s10abc(S2Testing::MakePolygon(kSouth0c + kFar2 + kNear1 + kNearFar1 +
                                   kNear0 + kSouth1 + kSouth0b + kSouth0a)),
 
-    nf2_n2_f210_s210ab(MakePolygon(kFar2 + kSouth0a + kFar1 + kSouth1 + kFar0 +
+    nf2_n2_f210_s210ab(S2Testing::MakePolygon(kFar2 + kSouth0a + kFar1 + kSouth1 + kFar0 +
                                    kSouth0b + kNearFar2 + kSouth2 + kNear2)),
 
-    f32_n0(MakePolygon(kFar2 + kNear0 + kFar3)),
-    n32_s0b(MakePolygon(kNear3 + kSouth0b + kNear2)),
+    f32_n0(S2Testing::MakePolygon(kFar2 + kNear0 + kFar3)),
+    n32_s0b(S2Testing::MakePolygon(kNear3 + kSouth0b + kNear2)),
 
-    cross1(MakePolygon(kCross1)),
-    cross1_side_hole(MakePolygon(kCross1 + kCross1SideHole)),
-    cross1_center_hole(MakePolygon(kCross1 + kCrossCenterHole)),
-    cross2(MakePolygon(kCross2)),
-    cross2_side_hole(MakePolygon(kCross2 + kCross2SideHole)),
-    cross2_center_hole(MakePolygon(kCross2 + kCrossCenterHole)),
+    cross1(S2Testing::MakePolygon(kCross1)),
+    cross1_side_hole(S2Testing::MakePolygon(kCross1 + kCross1SideHole)),
+    cross1_center_hole(S2Testing::MakePolygon(kCross1 + kCrossCenterHole)),
+    cross2(S2Testing::MakePolygon(kCross2)),
+    cross2_side_hole(S2Testing::MakePolygon(kCross2 + kCross2SideHole)),
+    cross2_center_hole(S2Testing::MakePolygon(kCross2 + kCrossCenterHole)),
 
-    overlap1(MakePolygon(kOverlap1)),
-    overlap1_side_hole(MakePolygon(kOverlap1 + kOverlap1SideHole)),
-    overlap1_center_hole(MakePolygon(kOverlap1 + kOverlapCenterHole)),
-    overlap2(MakePolygon(kOverlap2)),
-    overlap2_side_hole(MakePolygon(kOverlap2 + kOverlap2SideHole)),
-    overlap2_center_hole(MakePolygon(kOverlap2 + kOverlapCenterHole)),
+    overlap1(S2Testing::MakePolygon(kOverlap1)),
+    overlap1_side_hole(S2Testing::MakePolygon(kOverlap1 + kOverlap1SideHole)),
+    overlap1_center_hole(S2Testing::MakePolygon(kOverlap1 + kOverlapCenterHole)),
+    overlap2(S2Testing::MakePolygon(kOverlap2)),
+    overlap2_side_hole(S2Testing::MakePolygon(kOverlap2 + kOverlap2SideHole)),
+    overlap2_center_hole(S2Testing::MakePolygon(kOverlap2 + kOverlapCenterHole)),
 
-    far_H(MakePolygon(kFarHemi)),
-    south_H(MakePolygon(kSouthHemi)),
-    far_H_south_H(MakePolygon(kFarHSouthH))
+    far_H(S2Testing::MakePolygon(kFarHemi)),
+    south_H(S2Testing::MakePolygon(kSouthHemi)),
+    far_H_south_H(S2Testing::MakePolygon(kFarHSouthH))
 {}
 
 S2PolygonTestBase::~S2PolygonTestBase() {
@@ -564,11 +564,11 @@ TEST_F(S2PolygonTestBase, Operations) {
   for (int i = 0; i < arraysize(test_cases); ++i) {
     SCOPED_TRACE(StringPrintf("Polygon operation test case %d", i));
     TestCase* test = test_cases + i;
-    unique_ptr<S2Polygon> a(MakePolygon(test->a));
-    unique_ptr<S2Polygon> b(MakePolygon(test->b));
-    unique_ptr<S2Polygon> expected_a_and_b(MakePolygon(test->a_and_b));
-    unique_ptr<S2Polygon> expected_a_or_b(MakePolygon(test->a_or_b));
-    unique_ptr<S2Polygon> expected_a_minus_b(MakePolygon(test->a_minus_b));
+    unique_ptr<S2Polygon> a(S2Testing::MakePolygon(test->a));
+    unique_ptr<S2Polygon> b(S2Testing::MakePolygon(test->b));
+    unique_ptr<S2Polygon> expected_a_and_b(S2Testing::MakePolygon(test->a_and_b));
+    unique_ptr<S2Polygon> expected_a_or_b(S2Testing::MakePolygon(test->a_or_b));
+    unique_ptr<S2Polygon> expected_a_minus_b(S2Testing::MakePolygon(test->a_minus_b));
 
     // The intersections in the "expected" data were computed in lat-lng
     // space, while the actual intersections are computed using geodesics.
@@ -659,9 +659,9 @@ TEST_F(S2PolygonTestBase, PolylineIntersection) {
   for (int i = 0; i < arraysize(test_cases); ++i) {
     SCOPED_TRACE(StringPrintf("Polyline intersection test case %d", i));
     TestCase* test = test_cases + i;
-    unique_ptr<S2Polygon> a(MakePolygon(test->a));
-    unique_ptr<S2Polygon> b(MakePolygon(test->b));
-    unique_ptr<S2Polygon> expected_a_and_b(MakePolygon(test->a_and_b));
+    unique_ptr<S2Polygon> a(S2Testing::MakePolygon(test->a));
+    unique_ptr<S2Polygon> b(S2Testing::MakePolygon(test->b));
+    unique_ptr<S2Polygon> expected_a_and_b(S2Testing::MakePolygon(test->a_and_b));
 
     vector<S2Point> points;
     vector<S2Polyline *> polylines;
@@ -859,7 +859,7 @@ TEST(S2Polygon, TestS2CellConstructorAndContains) {
 }
 
 TEST(S2PolygonTest, Project) {
-  unique_ptr<S2Polygon> polygon(MakePolygon(kNear0 + kNear2));
+  unique_ptr<S2Polygon> polygon(S2Testing::MakePolygon(kNear0 + kNear2));
   S2Point point;
   S2Point projected;
 
