@@ -1,16 +1,16 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2CELLUNION_H_
-#define UTIL_GEOMETRY_S2CELLUNION_H_
+#ifndef S2_S2CELLUNION_H_
+#define S2_S2CELLUNION_H_
 
 #include <vector>
 using std::vector;
 
-#include "base/integral_types.h"
-#include "base/logging.h"
-#include "base/macros.h"
-#include "s2region.h"
-#include "s2cellid.h"
+#include "s2/base/integral_types.h"
+#include "s2/base/logging.h"
+#include "s2/base/macros.h"
+#include "s2/s2region.h"
+#include "s2/s2cellid.h"
 
 class S1Angle;
 class S2Cell;
@@ -199,4 +199,4 @@ class S2CellUnion : public S2Region {
 // Return true if two cell unions are identical.
 bool operator==(S2CellUnion const& x, S2CellUnion const& y);
 
-#endif  // UTIL_GEOMETRY_S2CELLUNION_H_
+#endif  // S2_S2CELLUNION_H_

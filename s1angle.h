@@ -1,15 +1,16 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S1ANGLE_H_
-#define UTIL_GEOMETRY_S1ANGLE_H_
+#ifndef S2_S1ANGLE_H_
+#define S2_S1ANGLE_H_
 
 #include <iosfwd>
 using std::ostream;
    // to forward declare ostream
 #include <math.h>
-#include "base/basictypes.h"
-#include "util/math/mathutil.h"
-#include "s2.h"
+
+#include "s2/base/basictypes.h"
+#include "s2/util/math/mathutil.h"
+#include "s2/s2.h"
 
 class S2LatLng;
 
@@ -204,4 +205,4 @@ inline S1Angle S1Angle::UnsignedE7(uint32 e7) {
 // decimal point, e.g. "17.3745904".
 ostream& operator<<(ostream& os, S1Angle const& a);
 
-#endif  // UTIL_GEOMETRY_S1ANGLE_H_
+#endif  // S2_S1ANGLE_H_

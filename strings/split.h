@@ -3,8 +3,8 @@
 // Functions for splitting and parsing strings.  Functions may be migrated
 // to this file from strutil.h in the future.
 //
-#ifndef STRINGS_SPLIT_H_
-#define STRINGS_SPLIT_H_
+#ifndef S2_STRINGS_SPLIT_H_
+#define S2_STRINGS_SPLIT_H_
 
 #include <string>
 using std::string;
@@ -161,4 +161,4 @@ bool SplitOneHexUint64Token(const char** source, const char* delim,
                             uint64* value);
 
 
-#endif  // STRINGS_SPLIT_H_
+#endif  // S2_STRINGS_SPLIT_H_

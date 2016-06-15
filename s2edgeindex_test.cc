@@ -1,6 +1,6 @@
 // Copyright 2009 Google Inc. All Rights Reserved.
 
-#include "s2edgeindex.h"
+#include "s2/s2edgeindex.h"
 
 #include <set>
 using std::set;
@@ -12,20 +12,20 @@ using std::string;
 #include <vector>
 using std::vector;
 
+#include "gtest/gtest.h"
 
-#include "base/commandlineflags.h"
-#include "base/stringprintf.h"
-#include "base/logging.h"
+#include "s2/base/commandlineflags.h"
+#include "s2/base/stringprintf.h"
+#include "s2/base/logging.h"
 // #include "testing/base/public/benchmark.h"
-#include "testing/base/public/gunit.h"
-#include "s2cap.h"
-#include "s2cell.h"
-#include "s2cellid.h"
-#include "s2edgeutil.h"
-#include "s2loop.h"
-#include "s2testing.h"
-#include "util/math/vector3-inl.h"
-#include "util/math/matrix3x3-inl.h"
+#include "s2/s2cap.h"
+#include "s2/s2cell.h"
+#include "s2/s2cellid.h"
+#include "s2/s2edgeutil.h"
+#include "s2/s2loop.h"
+#include "s2/s2testing.h"
+#include "s2/util/math/vector3-inl.h"
+#include "s2/util/math/matrix3x3-inl.h"
 
 DECLARE_bool(always_recurse_on_children);
 

@@ -6,9 +6,9 @@ using std::max;
 using std::swap;
 using std::reverse;
 
-#include "s2edgeutil.h"
+#include "s2/s2edgeutil.h"
 
-#include "base/logging.h"
+#include "s2/base/logging.h"
 
 bool S2EdgeUtil::SimpleCrossing(S2Point const& a, S2Point const& b,
                                 S2Point const& c, S2Point const& d) {

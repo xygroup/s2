@@ -6,15 +6,15 @@
 // See the vector2-inl.h file for more details
 
 
-#ifndef UTIL_MATH_VECTOR2_H__
-#define UTIL_MATH_VECTOR2_H__
+#ifndef S2_UTIL_MATH_VECTOR2_H__
+#define S2_UTIL_MATH_VECTOR2_H__
 
 #include <iostream>
 using std::ostream;
 using std::cout;
 using std::endl;
   // NOLINT(readability/streams)
-#include "base/basictypes.h"
+#include "s2/base/basictypes.h"
 
 template <typename VType> class Vector2;
 
@@ -186,4 +186,4 @@ typedef Vector2<int>    Vector2_i;
 typedef Vector2<float>  Vector2_f;
 typedef Vector2<double> Vector2_d;
 
-#endif  // UTIL_MATH_VECTOR2_H__
+#endif  // S2_UTIL_MATH_VECTOR2_H__

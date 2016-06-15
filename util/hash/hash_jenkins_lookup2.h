@@ -9,10 +9,10 @@
 // word from memory.  This relatively generic functionality probably
 // shouldn't live in this file.
 
-#ifndef UTIL_HASH_JENKINS_LOOKUP2_H__
-#define UTIL_HASH_JENKINS_LOOKUP2_H__
+#ifndef S2_UTIL_HASH_HASH_JENKINS_LOOKUP2_H__
+#define S2_UTIL_HASH_HASH_JENKINS_LOOKUP2_H__
 
-#include "base/port.h"
+#include "s2/base/port.h"
 
 // ----------------------------------------------------------------------
 // mix()
@@ -149,5 +149,5 @@ static inline uint32 Google1At(const char *ptr2) {
 // use more meaningful concepts.
 # define WORD_HASH
 
-#endif  // UTIL_HASH_JENKINS_LOOKUP2_H__
+#endif  // S2_UTIL_HASH_HASH_JENKINS_LOOKUP2_H__
 

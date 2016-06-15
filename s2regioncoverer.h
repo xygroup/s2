@@ -1,7 +1,7 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2REGION_COVERER_H_
-#define UTIL_GEOMETRY_S2REGION_COVERER_H_
+#ifndef S2_S2REGION_COVERER_H_
+#define S2_S2REGION_COVERER_H_
 
 #include <memory>
 using std::unique_ptr;
@@ -16,9 +16,9 @@ using std::make_pair;
 #include <vector>
 using std::vector;
 
-#include "base/macros.h"
-#include "s2cell.h"
-#include "s2cellid.h"
+#include "s2/base/macros.h"
+#include "s2/s2cell.h"
+#include "s2/s2cellid.h"
 
 class S2CellUnion;
 
@@ -208,4 +208,4 @@ class S2RegionCoverer {
   DISALLOW_EVIL_CONSTRUCTORS(S2RegionCoverer);
 };
 
-#endif  // UTIL_GEOMETRY_S2REGION_COVERER_H_
+#endif  // S2_S2REGION_COVERER_H_

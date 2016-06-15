@@ -2,7 +2,7 @@
 // Copyright (C) 1999-2005 Google, Inc.
 //
 
-#include "strutil.h"
+#include "s2/strings/strutil.h"
 
 #include <ctype.h>
 #include <errno.h>
@@ -42,7 +42,7 @@ using std::string;
 using std::vector;
 
 
-#include "split.h"
+#include "s2/strings/split.h"
 
 #ifdef OS_WINDOWS
 #include <pthread.h>        // for gmtime_r

@@ -1,16 +1,16 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2POLYLINE_H__
-#define UTIL_GEOMETRY_S2POLYLINE_H__
+#ifndef S2_S2POLYLINE_H__
+#define S2_S2POLYLINE_H__
 
 #include <vector>
 using std::vector;
 
-#include "base/logging.h"
-#include "base/macros.h"
-#include "s2.h"
-#include "s2region.h"
-#include "s2latlngrect.h"
+#include "s2/base/logging.h"
+#include "s2/base/macros.h"
+#include "s2/s2.h"
+#include "s2/s2region.h"
+#include "s2/s2latlngrect.h"
 
 class S1Angle;
 
@@ -187,4 +187,4 @@ class S2Polyline : public S2Region {
  // DISALLOW_EVIL_CONSTRUCTORS(S2Polyline);
 };
 
-#endif  // UTIL_GEOMETRY_S2POLYLINE_H__
+#endif  // S2_S2POLYLINE_H__

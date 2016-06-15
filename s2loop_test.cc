@@ -22,18 +22,18 @@ using std::multiset;
 #include <vector>
 using std::vector;
 
+#include "gtest/gtest.h"
 
-#include "base/commandlineflags.h"
-#include "base/logging.h"
+#include "s2/base/commandlineflags.h"
+#include "s2/base/logging.h"
 // #include "testing/base/public/benchmark.h"
-#include "testing/base/public/gunit.h"
-#include "s2cell.h"
-#include "s2edgeindex.h"
-#include "s2edgeutil.h"
-#include "s2loop.h"
-#include "s2testing.h"
-#include "util/math/matrix3x3.h"
-#include "util/math/matrix3x3-inl.h"
+#include "s2/s2cell.h"
+#include "s2/s2edgeindex.h"
+#include "s2/s2edgeutil.h"
+#include "s2/s2loop.h"
+#include "s2/s2testing.h"
+#include "s2/util/math/matrix3x3.h"
+#include "s2/util/math/matrix3x3-inl.h"
 
 DECLARE_bool(s2debug);
 

@@ -1,13 +1,13 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2R2RECT_H_
-#define UTIL_GEOMETRY_S2R2RECT_H_
+#ifndef S2_S2R2RECT_H_
+#define S2_S2R2RECT_H_
 
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "r1interval.h"
-#include "s2region.h"
-#include "util/math/vector2-inl.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/r1interval.h"
+#include "s2/s2region.h"
+#include "s2/util/math/vector2-inl.h"
 
 class S2CellId;
 class S2Cell;
@@ -198,4 +198,4 @@ inline bool S2R2Rect::operator==(S2R2Rect const& other) const {
 
 ostream& operator<<(ostream& os, S2R2Rect const& r);
 
-#endif  // UTIL_GEOMETRY_S2R2RECT_H_
+#endif  // S2_S2R2RECT_H_

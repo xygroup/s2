@@ -4,8 +4,8 @@
 // mathematical functions, properly coded (by consulting numerical
 // recipes or another authoritative source first).
 
-#ifndef UTIL_MATH_MATHUTIL_H__
-#define UTIL_MATH_MATHUTIL_H__
+#ifndef S2_UTIL_MATH_MATHUTIL_H__
+#define S2_UTIL_MATH_MATHUTIL_H__
 
 #include <math.h>
 #include <algorithm>
@@ -17,9 +17,9 @@ using std::reverse;
 #include <vector>
 using std::vector;
 
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "util/math/mathlimits.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/util/math/mathlimits.h"
 
 // Returns the sign of x:
 //   -1 if x < 0,
@@ -695,4 +695,4 @@ bool MathUtil::WithinFractionOrMargin(const T x, const T y,
   }
 }
 
-#endif  // UTIL_MATH_MATHUTIL_H__
+#endif  // S2_UTIL_MATH_MATHUTIL_H__

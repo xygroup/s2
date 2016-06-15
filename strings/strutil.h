@@ -9,8 +9,8 @@
 //
 // If you need to process UTF8 strings, take a look at files in i18n/utf8.
 
-#ifndef STRINGS_STRUTIL_H_
-#define STRINGS_STRUTIL_H_
+#ifndef S2_STRINGS_STRUTIL_H_
+#define S2_STRINGS_STRUTIL_H_
 
 #include <functional>
 using std::less;
@@ -53,14 +53,14 @@ using namespace std;
 // string headers depend on it.
 static const int kFastToBufferSize =       32;
 
-#include "base/basictypes.h"
-#include "base/logging.h"  // for CHECK
-#include "strtoint.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"  // for CHECK
+#include "s2/strings/strtoint.h"
 //#include "charset.h"
 //#include "escaping.h"
 //#include "host_port.h"
-#include "stringprintf.h"
-#include "base/port.h"
+#include "s2/strings/stringprintf.h"
+#include "s2/base/port.h"
 
 // ----------------------------------------------------------------------
 // FloatToString()
@@ -298,4 +298,4 @@ inline uint64 ParseLeadingUDec64Value(const string& str, uint64 deflt) {
 bool DictionaryParse(const string& encoded_str,
                       vector<pair<string, string> >* items);
 
-#endif   /* #ifndef STRINGS_STRUTIL_H_ */
+#endif   /* #ifndef S2_STRINGS_STRUTIL_H_ */

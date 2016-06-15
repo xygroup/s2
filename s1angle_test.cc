@@ -1,15 +1,16 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s1angle.h"
+#include "s2/s1angle.h"
 
 #include <sstream>
 
-#include "base/commandlineflags.h"
-#include "base/integral_types.h"
-#include "base/logging.h"
-#include "testing/base/public/gunit.h"
-#include "s2latlng.h"
-#include "s2testing.h"
+#include "gtest/gtest.h"
+
+#include "s2/base/commandlineflags.h"
+#include "s2/base/integral_types.h"
+#include "s2/base/logging.h"
+#include "s2/s2latlng.h"
+#include "s2/s2testing.h"
 
 DEFINE_int32(iters, (DEBUG_MODE ? 100 : 1000) * (1000 * 1000),
              "Run timing tests with this many iterations");

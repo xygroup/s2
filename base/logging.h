@@ -11,8 +11,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef BASE_LOGGING_H
-#define BASE_LOGGING_H
+#ifndef S2_BASE_LOGGING_H
+#define S2_BASE_LOGGING_H
 
 #include <stdlib.h>
 #include <iostream>
@@ -20,7 +20,7 @@ using std::ostream;
 using std::cout;
 using std::endl;
 
-#include "base/macros.h"
+#include "s2/base/macros.h"
 
 // Always-on checking
 #define CHECK(x)	if(x){}else LogMessageFatal(__FILE__, __LINE__).stream() << "Check failed: " #x
@@ -106,4 +106,4 @@ class LogMessageFatal : public LogMessage {
   DISALLOW_COPY_AND_ASSIGN(LogMessageFatal);
 };
 
-#endif  // BASE_LOGGING_H
+#endif  // S2_BASE_LOGGING_H

@@ -2,8 +2,8 @@
 
 // Defines the class S2EdgeIndex, a fast lookup structure for edges in S2.
 
-#ifndef UTIL_GEOMETRY_S2EDGEINDEX_H_
-#define UTIL_GEOMETRY_S2EDGEINDEX_H_
+#ifndef S2_S2EDGEINDEX_H_
+#define S2_S2EDGEINDEX_H_
 
 #include <map>
 using std::map;
@@ -17,10 +17,10 @@ using std::make_pair;
 using std::vector;
 
 
-#include "base/logging.h"
-#include "base/macros.h"
-#include "s2cellid.h"
-#include "s2edgeutil.h"
+#include "s2/base/logging.h"
+#include "s2/base/macros.h"
+#include "s2/s2cellid.h"
+#include "s2/s2edgeutil.h"
 
 class S2Cell;
 
@@ -255,4 +255,4 @@ inline void S2EdgeIndex::Iterator::Next() {
   }
 }
 
-#endif  // UTIL_GEOMETRY_S2EDGEINDEX_H_
+#endif  // S2_S2EDGEINDEX_H_

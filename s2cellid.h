@@ -1,7 +1,7 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2CELLID_H_
-#define UTIL_GEOMETRY_S2CELLID_H_
+#ifndef S2_S2CELLID_H_
+#define S2_S2CELLID_H_
 
 #include <iostream>
 using std::ostream;
@@ -14,11 +14,11 @@ using std::string;
 #include <vector>
 using std::vector;
 
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "base/port.h"  // for HASH_NAMESPACE_DECLARATION_START
-#include "s2.h"
-#include "util/math/vector2.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/base/port.h"  // for HASH_NAMESPACE_DECLARATION_START
+#include "s2/s2.h"
+#include "s2/util/math/vector2.h"
 
 class S2LatLng;
 
@@ -499,4 +499,4 @@ template<> struct hash<S2CellId> {
 
 }  // namespace std
 
-#endif  // UTIL_GEOMETRY_S2CELLID_H_
+#endif  // S2_S2CELLID_H_

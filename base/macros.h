@@ -7,8 +7,8 @@
 // any changes here, make sure that you're not breaking any platforms.
 //
 
-#ifndef BASE_MACROS_H_
-#define BASE_MACROS_H_
+#ifndef S2_BASE_MACROS_H_
+#define S2_BASE_MACROS_H_
 
 #include <stddef.h>         // For size_t
 
@@ -118,4 +118,4 @@ char (&ArraySizeHelper(const T (&array)[N]))[N];
 #define AS_STRING(x)   AS_STRING_INTERNAL(x)
 #define AS_STRING_INTERNAL(x)   #x
 
-#endif  // BASE_MACROS_H_
+#endif  // S2_BASE_MACROS_H_

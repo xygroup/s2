@@ -1,16 +1,17 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2LATLNG_H__
-#define UTIL_GEOMETRY_S2LATLNG_H__
+#ifndef S2_S2LATLNG_H__
+#define S2_S2LATLNG_H__
 
 #include <string>
 using std::string;
 
 #include <ostream>
-#include "base/basictypes.h"
-#include "s1angle.h"
-#include "s2.h"
-#include "util/math/vector2-inl.h"
+
+#include "s2/base/basictypes.h"
+#include "s2/s1angle.h"
+#include "s2/s2.h"
+#include "s2/util/math/vector2-inl.h"
 
 // This class represents a point on the unit sphere as a pair
 // of latitude-longitude coordinates.  Like the rest of the "geometry"
@@ -186,4 +187,4 @@ inline S2LatLng operator*(S2LatLng const& a, double m) {
 
 ostream& operator<<(ostream& os, S2LatLng const& ll);
 
-#endif  // UTIL_GEOMETRY_S2LATLNG_H__
+#endif  // S2_S2LATLNG_H__

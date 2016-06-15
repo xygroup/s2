@@ -6,15 +6,15 @@
 // See the vector4-inl.h file for more details
 
 
-#ifndef UTIL_MATH_VECTOR4_H__
-#define UTIL_MATH_VECTOR4_H__
+#ifndef S2_UTIL_MATH_VECTOR4_H__
+#define S2_UTIL_MATH_VECTOR4_H__
 
 #include <iostream>
 using std::ostream;
 using std::cout;
 using std::endl;
   // NOLINT(readability/streams)
-#include "base/basictypes.h"
+#include "s2/base/basictypes.h"
 
 template <typename VType> class Vector4;
 // TODO(user): Look into creating conversion operators to remove the
@@ -175,4 +175,4 @@ typedef Vector4<int>    Vector4_i;
 typedef Vector4<float>  Vector4_f;
 typedef Vector4<double> Vector4_d;
 
-#endif  // UTIL_MATH_VECTOR4_H__
+#endif  // S2_UTIL_MATH_VECTOR4_H__

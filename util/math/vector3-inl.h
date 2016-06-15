@@ -23,10 +23,10 @@
 // This feature is necessary to use the class in a more general framework with
 // VType != plain old data type.
 
-#ifndef UTIL_MATH_VECTOR3_INL_H__
-#define UTIL_MATH_VECTOR3_INL_H__
+#ifndef S2_UTIL_MATH_VECTOR3_INL_H__
+#define S2_UTIL_MATH_VECTOR3_INL_H__
 
-#include "util/math/vector3.h"
+#include "s2/util/math/vector3.h"
 
 #include <algorithm>
 using std::min;
@@ -35,11 +35,11 @@ using std::swap;
 using std::reverse;
 
 #include <math.h>
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "util/math/mathutil.h"
-#include "util/math/vector2.h"
-#include "util/math/vector4.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/util/math/mathutil.h"
+#include "s2/util/math/vector2.h"
+#include "s2/util/math/vector4.h"
 
 template <typename VType>
 Vector3<VType>::Vector3() {
@@ -418,4 +418,4 @@ std::ostream &operator <<(std::ostream &out, const Vector3<VType> &va) {
   return out;
 }
 
-#endif  // UTIL_MATH_VECTOR3_INL_H__
+#endif  // S2_UTIL_MATH_VECTOR3_INL_H__

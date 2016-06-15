@@ -1,6 +1,6 @@
 // Copyright 2006 Google Inc. All Rights Reserved.
 
-#include "s2polygonbuilder.h"
+#include "s2/s2polygonbuilder.h"
 
 #include <memory>
 using std::unique_ptr;
@@ -9,16 +9,16 @@ using std::unique_ptr;
 using std::set;
 using std::multiset;
 
+#include "gtest/gtest.h"
 
-#include "base/logging.h"
-#include "base/macros.h"
-#include "strings/stringprintf.h"
-#include "testing/base/public/gunit.h"
-#include "s2cap.h"
-#include "s2polygon.h"
-#include "s2polyline.h"
-#include "s2testing.h"
-#include "util/math/matrix3x3-inl.h"
+#include "s2/base/logging.h"
+#include "s2/base/macros.h"
+#include "s2/strings/stringprintf.h"
+#include "s2/s2cap.h"
+#include "s2/s2polygon.h"
+#include "s2/s2polyline.h"
+#include "s2/s2testing.h"
+#include "s2/util/math/matrix3x3-inl.h"
 
 namespace {
 

@@ -1,7 +1,7 @@
 // Copyright 2006 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2POLYGONBUILDER_H__
-#define UTIL_GEOMETRY_S2POLYGONBUILDER_H__
+#ifndef S2_S2POLYGONBUILDER_H__
+#define S2_S2POLYGONBUILDER_H__
 
 #include <memory>
 using std::unique_ptr;
@@ -20,10 +20,10 @@ using std::make_pair;
 #include <vector>
 using std::vector;
 
-#include "base/basictypes.h"
-#include "s2.h"
-#include "s1angle.h"
-#include "util/math/matrix3x3.h"
+#include "s2/base/basictypes.h"
+#include "s2/s2.h"
+#include "s2/s1angle.h"
+#include "s2/util/math/matrix3x3.h"
 
 class S2Loop;
 class S2Polygon;
@@ -308,4 +308,4 @@ inline S2PolygonBuilderOptions S2PolygonBuilderOptions::UNDIRECTED_UNION() {
   return options;
 }
 
-#endif  // UTIL_GEOMETRY_S2POLYGONBUILDER_H__
+#endif  // S2_S2POLYGONBUILDER_H__

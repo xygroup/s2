@@ -10,13 +10,13 @@
 // numeric_limits for the compilers we use.
 //
 
-#ifndef UTIL_MATH_MATHLIMITS_H__
-#define UTIL_MATH_MATHLIMITS_H__
+#ifndef S2_UTIL_MATH_MATHLIMITS_H__
+#define S2_UTIL_MATH_MATHLIMITS_H__
 
 #include <string.h>
 #include <math.h>
 #include <cfloat>
-#include "base/basictypes.h"
+#include "s2/base/basictypes.h"
 
 // ========================================================================= //
 
@@ -235,4 +235,4 @@ DECL_FP_LIMITS(long double, LDBL)
 
 // ========================================================================= //
 
-#endif  // UTIL_MATH_MATHLIMITS_H__
+#endif  // S2_UTIL_MATH_MATHLIMITS_H__

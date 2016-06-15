@@ -1,6 +1,6 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2cellid.h"
+#include "s2/s2cellid.h"
 
 #include <algorithm>
 using std::min;
@@ -16,17 +16,17 @@ using std::unordered_map;
 #include <vector>
 using std::vector;
 
+#include "gtest/gtest.h"
 
-#include "base/commandlineflags.h"
-#include "base/integral_types.h"
-#include "base/logging.h"
+#include "s2/base/commandlineflags.h"
+#include "s2/base/integral_types.h"
+#include "s2/base/logging.h"
 // #include "base/malloc_interface.h"
 // #include "base/sysinfo.h"
-#include "testing/base/public/gunit.h"
-#include "s2.h"
-#include "s2latlng.h"
-#include "s2testing.h"
-#include "util/math/mathutil.h"
+#include "s2/s2.h"
+#include "s2/s2latlng.h"
+#include "s2/s2testing.h"
+#include "s2/util/math/mathutil.h"
 
 // #define int8 HTM_int8  // To avoid conflicts with our own 'int8'
 // #include "third_party/htm/include/SpatialIndex.h"

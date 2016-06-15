@@ -7,13 +7,13 @@ using std::swap;
 using std::reverse;
 
 
-#include "s2latlngrect.h"
+#include "s2/s2latlngrect.h"
 
-#include "base/logging.h"
-#include "s2cap.h"
-#include "s2cell.h"
-#include "s2edgeutil.h"
-#include "util/math/mathutil.h"
+#include "s2/base/logging.h"
+#include "s2/s2cap.h"
+#include "s2/s2cell.h"
+#include "s2/s2edgeutil.h"
+#include "s2/util/math/mathutil.h"
 
 S2LatLngRect S2LatLngRect::FromCenterSize(S2LatLng const& center,
                                           S2LatLng const& size) {

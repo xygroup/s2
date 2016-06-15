@@ -1,7 +1,7 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2LATLNGRECT_H_
-#define UTIL_GEOMETRY_S2LATLNGRECT_H_
+#ifndef S2_S2LATLNGRECT_H_
+#define S2_S2LATLNGRECT_H_
 
 #include <iostream>
 using std::ostream;
@@ -9,13 +9,13 @@ using std::cout;
 using std::endl;
 
 
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "s1angle.h"
-#include "r1interval.h"
-#include "s1interval.h"
-#include "s2region.h"
-#include "s2latlng.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/s1angle.h"
+#include "s2/r1interval.h"
+#include "s2/s1interval.h"
+#include "s2/s2region.h"
+#include "s2/s2latlng.h"
 
 // An S2LatLngRect represents a closed latitude-longitude rectangle.  It is
 // capable of representing the empty and full rectangles as well as
@@ -314,4 +314,4 @@ inline bool S2LatLngRect::operator!=(S2LatLngRect const& other) const {
 
 ostream& operator<<(ostream& os, S2LatLngRect const& r);
 
-#endif  // UTIL_GEOMETRY_S2LATLNGRECT_H_
+#endif  // S2_S2LATLNGRECT_H_

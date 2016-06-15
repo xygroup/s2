@@ -1,7 +1,7 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2_H_
-#define UTIL_GEOMETRY_S2_H_
+#ifndef S2_S2_H_
+#define S2_S2_H_
 
 #include <algorithm>
 using std::min;
@@ -12,12 +12,12 @@ using std::reverse;
 #include <unordered_map>
 using std::unordered_map;
 // To have template struct hash<T> defined
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "base/macros.h"
-#include "base/port.h"  // for HASH_NAMESPACE_DECLARATION_START
-#include "util/math/vector3-inl.h"
-#include "util/math/matrix3x3.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/base/macros.h"
+#include "s2/base/port.h"  // for HASH_NAMESPACE_DECLARATION_START
+#include "s2/util/math/vector3-inl.h"
+#include "s2/util/math/matrix3x3.h"
 
 // An S2Point represents a point on the unit sphere as a 3D vector.  Usually
 // points are normalized to be unit length, but some methods do not require
@@ -881,4 +881,4 @@ int S2::Metric<dim>::GetClosestLevel(double value) const {
   return GetMinLevel((dim == 1 ? M_SQRT2 : 2) * value);
 }
 
-#endif  // UTIL_GEOMETRY_S2_H_
+#endif  // S2_S2_H_

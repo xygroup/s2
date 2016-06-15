@@ -1,15 +1,15 @@
 // Copyright 2006 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2REGIONINTERSECTION_H__
-#define UTIL_GEOMETRY_S2REGIONINTERSECTION_H__
+#ifndef S2_S2REGIONINTERSECTION_H__
+#define S2_S2REGIONINTERSECTION_H__
 
 #include <vector>
 using std::vector;
 
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "base/macros.h"
-#include "s2region.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/base/macros.h"
+#include "s2/s2region.h"
 
 class S2Cap;
 class S2Cell;
@@ -62,4 +62,4 @@ class S2RegionIntersection : public S2Region {
   DISALLOW_EVIL_CONSTRUCTORS(S2RegionIntersection);
 };
 
-#endif  // UTIL_GEOMETRY_S2REGIONINTERSECTION_H__
+#endif  // S2_S2REGIONINTERSECTION_H__

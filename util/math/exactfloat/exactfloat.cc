@@ -1,6 +1,6 @@
 // Copyright 2009 Google Inc. All Rights Reserved.
 
-#include "util/math/exactfloat/exactfloat.h"
+#include "s2/util/math/exactfloat/exactfloat.h"
 #include <cstring>
 #include <cmath>
 
@@ -14,8 +14,8 @@ using std::reverse;
 #include <limits>
 using std::numeric_limits;
 
-#include "base/integral_types.h"
-#include "base/logging.h"
+#include "s2/base/integral_types.h"
+#include "s2/base/logging.h"
 #include "openssl/crypto.h"
 
 // Define storage for constants.

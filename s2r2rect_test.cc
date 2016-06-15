@@ -5,13 +5,14 @@
 
 #include "s2r2rect.h"
 
-#include "strings/stringprintf.h"
-#include "testing/base/public/gunit.h"
-#include "s2.h"
-#include "s2cap.h"
-#include "s2cell.h"
-#include "s2latlngrect.h"
-#include "s2testing.h"
+#include "gtest/gtest.h"
+
+#include "s2/strings/stringprintf.h"
+#include "s2/s2.h"
+#include "s2/s2cap.h"
+#include "s2/s2cell.h"
+#include "s2/s2latlngrect.h"
+#include "s2/s2testing.h"
 
 static S2R2Rect MakeRect(double x_lo, double y_lo, double x_hi, double y_hi) {
   // Convenience method to construct a rectangle.  This method is

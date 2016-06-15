@@ -1,6 +1,6 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2regioncoverer.h"
+#include "s2/s2regioncoverer.h"
 
 #include <pthread.h>
 
@@ -23,10 +23,10 @@ using std::priority_queue;
 using std::vector;
 
 
-#include "base/logging.h"
-#include "s2.h"
-#include "s2cap.h"
-#include "s2cellunion.h"
+#include "s2/base/logging.h"
+#include "s2/s2.h"
+#include "s2/s2cap.h"
+#include "s2/s2cellunion.h"
 
 // Define storage for header file constants (the values are not needed here).
 int const S2RegionCoverer::kDefaultMaxCells;

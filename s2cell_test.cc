@@ -1,6 +1,6 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2cell.h"
+#include "s2/s2cell.h"
 
 #include <cstdio>
 #include <map>
@@ -10,14 +10,14 @@ using std::multimap;
 #include <vector>
 using std::vector;
 
+#include "gtest/gtest.h"
 
-#include "base/commandlineflags.h"
-#include "base/logging.h"
-#include "testing/base/public/gunit.h"
-#include "s2.h"
-#include "s2cap.h"
-#include "s2latlngrect.h"
-#include "s2testing.h"
+#include "s2/base/commandlineflags.h"
+#include "s2/base/logging.h"
+#include "s2/s2.h"
+#include "s2/s2cap.h"
+#include "s2/s2latlngrect.h"
+#include "s2/s2testing.h"
 
 TEST(S2Cell, TestFaces) {
   map<S2Point, int> edge_counts;

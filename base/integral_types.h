@@ -7,8 +7,8 @@
 // any changes here, make sure that you're not breaking any platforms.
 //
 
-#ifndef BASE_INT_TYPES_H_
-#define BASE_INT_TYPES_H_
+#ifndef S2_BASE_INT_TYPES_H_
+#define S2_BASE_INT_TYPES_H_
 
 #include <cstdint>
 // Standard typedefs
@@ -90,4 +90,4 @@ static const  int64 kint64min  = (( int64) GG_LONGLONG(0x8000000000000000));
 static const  int64 kint64max  = (( int64) GG_LONGLONG(0x7FFFFFFFFFFFFFFF));
 
 
-#endif  // BASE_INT_TYPES_H_
+#endif  // S2_BASE_INT_TYPES_H_

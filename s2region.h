@@ -1,9 +1,9 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2REGION_H_
-#define UTIL_GEOMETRY_S2REGION_H_
+#ifndef S2_S2REGION_H_
+#define S2_S2REGION_H_
 
-#include "s2.h"
+#include "s2/s2.h"
 
 class S2Cap;
 class S2Cell;
@@ -62,4 +62,4 @@ class S2Region {
   // subtypes may relax this restriction.
 };
 
-#endif  // UTIL_GEOMETRY_S2REGION_H_
+#endif  // S2_S2REGION_H_

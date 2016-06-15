@@ -1,6 +1,6 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2polyline.h"
+#include "s2/s2polyline.h"
 
 #include <memory>
 using std::unique_ptr;
@@ -8,13 +8,13 @@ using std::unique_ptr;
 #include <vector>
 using std::vector;
 
+#include "gtest/gtest.h"
 
-#include "base/commandlineflags.h"
-#include "base/stringprintf.h"
-#include "testing/base/public/gunit.h"
-#include "s2cell.h"
-#include "s2latlng.h"
-#include "s2testing.h"
+#include "s2/base/commandlineflags.h"
+#include "s2/base/stringprintf.h"
+#include "s2/s2cell.h"
+#include "s2/s2latlng.h"
+#include "s2/s2testing.h"
 
 DECLARE_bool(s2debug);
 

@@ -1,6 +1,6 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2cellunion.h"
+#include "s2/s2cellunion.h"
 
 #include <algorithm>
 using std::min;
@@ -11,15 +11,15 @@ using std::reverse;
 #include <vector>
 using std::vector;
 
+#include "gtest/gtest.h"
 
-#include "base/integral_types.h"
-#include "base/logging.h"
-#include "testing/base/public/gunit.h"
-#include "s2cellid.h"
-#include "s2cell.h"
-#include "s2cap.h"
-#include "s2testing.h"
-#include "s2regioncoverer.h"
+#include "s2/base/integral_types.h"
+#include "s2/base/logging.h"
+#include "s2/s2cellid.h"
+#include "s2/s2cell.h"
+#include "s2/s2cap.h"
+#include "s2/s2testing.h"
+#include "s2/s2regioncoverer.h"
 
 TEST(S2CellUnion, Basic) {
   S2CellUnion empty;

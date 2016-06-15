@@ -1,12 +1,12 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2EDGEUTIL_H__
-#define UTIL_GEOMETRY_S2EDGEUTIL_H__
+#ifndef S2_S2EDGEUTIL_H__
+#define S2_S2EDGEUTIL_H__
 
-#include "base/logging.h"
-#include "base/macros.h"
-#include "s2.h"
-#include "s2latlngrect.h"
+#include "s2/base/logging.h"
+#include "s2/base/macros.h"
+#include "s2/s2.h"
+#include "s2/s2latlngrect.h"
 
 class S2LatLngRect;
 
@@ -333,4 +333,4 @@ inline bool S2EdgeUtil::LongitudePruner::Intersects(S2Point const& v1) {
   return result;
 }
 
-#endif  // UTIL_GEOMETRY_S2EDGEUTIL_H__
+#endif  // S2_S2EDGEUTIL_H__

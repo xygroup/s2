@@ -1,15 +1,15 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2REGIONUNION_H__
-#define UTIL_GEOMETRY_S2REGIONUNION_H__
+#ifndef S2_S2REGIONUNION_H__
+#define S2_S2REGIONUNION_H__
 
 #include <vector>
 using std::vector;
 
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "base/macros.h"
-#include "s2region.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/base/macros.h"
+#include "s2/s2region.h"
 
 class S2Cap;
 class S2Cell;
@@ -65,4 +65,4 @@ class S2RegionUnion : public S2Region {
   DISALLOW_EVIL_CONSTRUCTORS(S2RegionUnion);
 };
 
-#endif  // UTIL_GEOMETRY_S2REGIONUNION_H__
+#endif  // S2_S2REGIONUNION_H__

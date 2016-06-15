@@ -4,12 +4,13 @@
 // use the R1Interval and S1Interval classes, so most of the testing
 // is done in those unit tests.
 
-#include "s2latlngrect.h"
-#include "s2edgeutil.h"
-#include "s2cap.h"
-#include "s2cell.h"
-#include "s2testing.h"
-#include "testing/base/public/gunit.h"
+#include "gtest/gtest.h"
+
+#include "s2/s2latlngrect.h"
+#include "s2/s2edgeutil.h"
+#include "s2/s2cap.h"
+#include "s2/s2cell.h"
+#include "s2/s2testing.h"
 
 static S2LatLngRect RectFromDegrees(double lat_lo, double lng_lo,
                                     double lat_hi, double lng_hi) {

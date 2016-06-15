@@ -1,7 +1,7 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2TESTING_H__
-#define UTIL_GEOMETRY_S2TESTING_H__
+#ifndef S2_S2TESTING_H__
+#define S2_S2TESTING_H__
 
 #include <string>
 using std::string;
@@ -9,8 +9,8 @@ using std::string;
 #include <vector>
 using std::vector;
 
-#include "s2.h"
-#include "s2cellid.h"
+#include "s2/s2.h"
+#include "s2/s2cellid.h"
 
 class S2LatLngRect;
 class S2Loop;
@@ -151,4 +151,4 @@ class S2Testing::Random {
   int32 PlusOrMinus(int32 value, float multiplier);
 };
 
-#endif  // UTIL_GEOMETRY_S2TESTING_H__
+#endif  // S2_S2TESTING_H__

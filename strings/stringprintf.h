@@ -7,8 +7,8 @@
 //      SStringPrintf(&result, "%d %s\n", 10, "hello");
 //      StringAppendF(&result, "%d %s\n", 20, "there");
 
-#ifndef _STRINGS_STRINGPRINTF_H
-#define _STRINGS_STRINGPRINTF_H
+#ifndef S2_STRINGS_STRINGPRINTF_H
+#define S2_STRINGS_STRINGPRINTF_H
 
 #include <stdarg.h>
 #include <string>
@@ -17,8 +17,8 @@ using std::string;
 #include <vector>
 using std::vector;
 
-#include "base/port.h"
-#include "stringprintf.h"
+#include "s2/base/port.h"
+// #include "stringprintf.h"
 
 // Return a C++ string
 extern string StringPrintf(const char* format, ...)
@@ -47,4 +47,4 @@ extern const int kStringPrintfVectorMaxArgs;
 // StringPrintfVector will LOG(FATAL) if v.size() > kStringPrintfVectorMaxArgs
 extern string StringPrintfVector(const char* format, const vector<string>& v);
 
-#endif /* _STRINGS_STRINGPRINTF_H */
+#endif /* S2_STRINGS_STRINGPRINTF_H */

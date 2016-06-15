@@ -1,7 +1,7 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2LOOP_H__
-#define UTIL_GEOMETRY_S2LOOP_H__
+#ifndef S2_S2LOOP_H__
+#define S2_S2LOOP_H__
 
 #include <map>
 using std::map;
@@ -11,12 +11,12 @@ using std::multimap;
 using std::vector;
 
 
-#include "base/logging.h"
-#include "base/macros.h"
-#include "s2edgeindex.h"
-#include "s2region.h"
-#include "s2latlngrect.h"
-#include "s2edgeutil.h"
+#include "s2/base/logging.h"
+#include "s2/base/macros.h"
+#include "s2/s2edgeindex.h"
+#include "s2/s2region.h"
+#include "s2/s2latlngrect.h"
+#include "s2/s2edgeutil.h"
 
 class S2Loop;
 // Defined in the cc file. A helper class for AreBoundariesCrossing.
@@ -415,4 +415,4 @@ T S2Loop::GetSurfaceIntegral(T f_tri(S2Point const&, S2Point const&,
   return sum;
 }
 
-#endif  // UTIL_GEOMETRY_S2LOOP_H__
+#endif  // S2_S2LOOP_H__

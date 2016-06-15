@@ -1,10 +1,10 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2pointregion.h"
-#include "base/logging.h"
-#include "s2cap.h"
-#include "s2cell.h"
-#include "s2latlngrect.h"
+#include "s2/s2pointregion.h"
+#include "s2/base/logging.h"
+#include "s2/s2cap.h"
+#include "s2/s2cell.h"
+#include "s2/s2latlngrect.h"
 
 S2PointRegion::~S2PointRegion() {
 }

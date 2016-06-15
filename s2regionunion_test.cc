@@ -1,6 +1,6 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2regionunion.h"
+#include "s2/s2regionunion.h"
 
 #include <memory>
 using std::unique_ptr;
@@ -9,12 +9,12 @@ using std::unique_ptr;
 using std::vector;
 
 
-#include "testing/base/public/gunit.h"
-#include "s2cap.h"
-#include "s2cell.h"
-#include "s2latlngrect.h"
-#include "s2pointregion.h"
-#include "s2regioncoverer.h"
+#include "gunit/gunit.h"
+#include "s2/s2cap.h"
+#include "s2/s2cell.h"
+#include "s2/s2latlngrect.h"
+#include "s2/s2pointregion.h"
+#include "s2/s2regioncoverer.h"
 
 namespace {
 

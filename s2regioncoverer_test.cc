@@ -1,6 +1,6 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2regioncoverer.h"
+#include "s2/s2regioncoverer.h"
 
 #include <stdio.h>
 
@@ -22,20 +22,20 @@ using std::string;
 #include <vector>
 using std::vector;
 
+#include "gtest/gtest.h"
 
-#include "base/commandlineflags.h"
-#include "base/logging.h"
-#include "base/strtoint.h"
-#include "strings/split.h"
-#include "strings/stringprintf.h"
-#include "testing/base/public/gunit.h"
-#include "s2cap.h"
-#include "s2cell.h"
-#include "s2cellid.h"
-#include "s2cellunion.h"
-#include "s2latlng.h"
-#include "s2loop.h"
-#include "s2testing.h"
+#include "s2/base/commandlineflags.h"
+#include "s2/base/logging.h"
+#include "s2/base/strtoint.h"
+#include "s2/strings/split.h"
+#include "s2/strings/stringprintf.h"
+#include "s2/s2cap.h"
+#include "s2/s2cell.h"
+#include "s2/s2cellid.h"
+#include "s2/s2cellunion.h"
+#include "s2/s2latlng.h"
+#include "s2/s2loop.h"
+#include "s2/s2testing.h"
 
 // DEFINE_string(max_cells, "4,8",
 //               "Comma-separated list of values to use for 'max_cells'");

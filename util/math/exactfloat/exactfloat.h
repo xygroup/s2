@@ -91,8 +91,8 @@
 // mantissa) is returned by prec().  The precision is increased as necessary
 // so that the result of every operation can be represented exactly.
 
-#ifndef UTIL_MATH_EXACTFLOAT_EXACTFLOAT_H_
-#define UTIL_MATH_EXACTFLOAT_EXACTFLOAT_H_
+#ifndef S2_UTIL_MATH_EXACTFLOAT_EXACTFLOAT_H_
+#define S2_UTIL_MATH_EXACTFLOAT_EXACTFLOAT_H_
 
 #include <math.h>
 #include <limits.h>
@@ -104,8 +104,8 @@ using std::endl;
 #include <string>
 using std::string;
 
-#include "base/logging.h"
-#include "base/integral_types.h"
+#include "s2/base/logging.h"
+#include "s2/base/integral_types.h"
 #include "openssl/bn.h"
 
 class ExactFloat {
@@ -602,4 +602,4 @@ inline ExactFloat ExactFloat::CopyWithSign(int sign) const {
   return r;
 }
 
-#endif  // UTIL_MATH_EXACTFLOAT_EXACTFLOAT_H_
+#endif  // S2_UTIL_MATH_EXACTFLOAT_EXACTFLOAT_H_

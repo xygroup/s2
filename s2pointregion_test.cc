@@ -3,12 +3,13 @@
 #include <memory>
 using std::unique_ptr;
 
-#include "s2pointregion.h"
+#include "s2/s2pointregion.h"
 
-#include "testing/base/public/gunit.h"
-#include "s2cap.h"
-#include "s2cell.h"
-#include "s2latlngrect.h"
+#include "gtest/gtest.h"
+
+#include "s2/s2cap.h"
+#include "s2/s2cell.h"
+#include "s2/s2latlngrect.h"
 
 namespace {
 

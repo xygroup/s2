@@ -1,8 +1,8 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s1interval.h"
+#include "s2/s1interval.h"
 
-#include "base/logging.h"
+#include "s2/base/logging.h"
 
 S1Interval S1Interval::FromPoint(double p) {
   if (p == -M_PI) p = M_PI;

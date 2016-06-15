@@ -16,19 +16,19 @@
 // This feature is necessary to use the class in a more general framework with
 // VType != plain old data type.
 
-#ifndef UTIL_MATH_MATRIX3X3_INL_H__
-#define UTIL_MATH_MATRIX3X3_INL_H__
+#ifndef S2_UTIL_MATH_MATRIX3X3_INL_H__
+#define S2_UTIL_MATH_MATRIX3X3_INL_H__
 #include <iostream>
 using std::ostream;
 using std::cout;
 using std::endl;
 
 
-#include "util/math/mathutil.h"
-#include "util/math/vector3-inl.h"
-#include "util/math/matrix3x3.h"
-#include "base/basictypes.h"
-#include "base/logging.h"
+#include "s2/util/math/mathutil.h"
+#include "s2/util/math/vector3-inl.h"
+#include "s2/util/math/matrix3x3.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
 
 template <class VType>
 class Matrix3x3 {
@@ -568,4 +568,4 @@ class Matrix3x3 {
   }
 };
 
-#endif  // UTIL_MATH_MATRIX3X3_INL_H__
+#endif  // S2_UTIL_MATH_MATRIX3X3_INL_H__

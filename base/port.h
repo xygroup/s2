@@ -1,8 +1,8 @@
 // //
 // // Copyright (C) 1999 and onwards Google, Inc.
 
-#ifndef BASE_PORT_H_
-#define BASE_PORT_H_
+#ifndef S2_BASE_PORT_H_
+#define S2_BASE_PORT_H_
 
 // //
 // // Tell the compiler to do printf format string checking if the
@@ -21,4 +21,4 @@
 // //
 #define PACKED __attribute__ ((packed))
 
-#endif  // BASE_PORT_H_
+#endif  // S2_BASE_PORT_H_

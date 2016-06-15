@@ -11,12 +11,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef BASE_COMMANDLINEFLAGS_H
-#define BASE_COMMANDLINEFLAGS_H
+#ifndef S2_BASE_COMMANDLINEFLAGS_H
+#define S2_BASE_COMMANDLINEFLAGS_H
 
 #define CONCAT(t1, t2)t1##t2
 #define DEFINE_bool(flag, default_value, help_text) bool CONCAT(FLAGS_,flag) = default_value
 #define DECLARE_bool(flag) extern bool CONCAT(FLAGS_,flag)
 #define DEFINE_int32(flag, default_value, help_text) int CONCAT(FLAGS_,flag) = default_value
 
-#endif  // BASE_COMMANDLINEFLAGS_H
+#endif  // S2_BASE_COMMANDLINEFLAGS_H

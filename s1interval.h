@@ -1,7 +1,7 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S1INTERVAL_H_
-#define UTIL_GEOMETRY_S1INTERVAL_H_
+#ifndef S2_S1INTERVAL_H_
+#define S2_S1INTERVAL_H_
 
 #include <iostream>
 using std::ostream;
@@ -9,9 +9,9 @@ using std::cout;
 using std::endl;
 
 #include <math.h>
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "util/math/vector2-inl.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/util/math/vector2-inl.h"
 
 // An S1Interval represents a closed interval on a unit circle (also known
 // as a 1-dimensional sphere).  It is capable of representing the empty
@@ -219,4 +219,4 @@ inline ostream& operator<<(ostream& os, S1Interval const& x) {
   return os << "[" << x.lo() << ", " << x.hi() << "]";
 }
 
-#endif  // UTIL_GEOMETRY_S1INTERVAL_H_
+#endif  // S2_S1INTERVAL_H_

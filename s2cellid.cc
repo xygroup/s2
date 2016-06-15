@@ -1,6 +1,6 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2cellid.h"
+#include "s2/s2cellid.h"
 
 #include <pthread.h>
 
@@ -17,13 +17,13 @@ using std::setprecision;
 using std::vector;
 
 
-#include "base/integral_types.h"
-#include "base/logging.h"
-#include "strings/strutil.h"
-#include "s2.h"
-#include "s2latlng.h"
-#include "util/math/mathutil.h"
-#include "util/math/vector2-inl.h"
+#include "s2/base/integral_types.h"
+#include "s2/base/logging.h"
+#include "s2/strings/strutil.h"
+#include "s2/s2.h"
+#include "s2/s2latlng.h"
+#include "s2/util/math/mathutil.h"
+#include "s2/util/math/vector2-inl.h"
 
 // The following lookup tables are used to convert efficiently between an
 // (i,j) cell index and the corresponding position along the Hilbert curve.

@@ -24,13 +24,13 @@ using std::pair;
 using std::make_pair;
 
 
-#include "s2loop.h"
+#include "s2/s2loop.h"
 
-#include "base/commandlineflags.h"
-#include "base/logging.h"
-#include "s2cap.h"
-#include "s2cell.h"
-#include "s2edgeindex.h"
+#include "s2/base/commandlineflags.h"
+#include "s2/base/logging.h"
+#include "s2/s2cap.h"
+#include "s2/s2cell.h"
+#include "s2/s2edgeindex.h"
 
 DECLARE_bool(s2debug);  // defined in s2.cc
 

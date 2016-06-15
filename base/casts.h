@@ -7,8 +7,8 @@
 // any changes here, make sure that you're not breaking any platforms.
 //
 
-#ifndef BASE_CASTS_H_
-#define BASE_CASTS_H_
+#ifndef S2_BASE_CASTS_H_
+#define S2_BASE_CASTS_H_
 
 #include <cassert>         // for use with down_cast<>
 #include <cstring>         // for memcpy
@@ -16,7 +16,7 @@
 #include <typeinfo>         // for enumeration casts and tests
 #include <type_traits>
 
-#include "base/macros.h"
+#include "s2/base/macros.h"
 
 
 // Use implicit_cast as a safe version of static_cast or const_cast
@@ -394,4 +394,4 @@ inline Enum tight_enum_cast(int e_val) {
   return static_cast<Enum>(e_val);
 }
 
-#endif  // BASE_CASTS_H_
+#endif  // S2_BASE_CASTS_H_

@@ -1,12 +1,12 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2POINTREGION_H__
-#define UTIL_GEOMETRY_S2POINTREGION_H__
+#ifndef S2_S2POINTREGION_H__
+#define S2_S2POINTREGION_H__
 
-#include "base/logging.h"
-#include "base/macros.h"
-#include "s2.h"
-#include "s2region.h"
+#include "s2/base/logging.h"
+#include "s2/base/macros.h"
+#include "s2/s2.h"
+#include "s2/s2region.h"
 
 // An S2PointRegion is a region that contains a single point.  It is more
 // expensive than the raw S2Point type and is useful mainly for completeness.
@@ -42,4 +42,4 @@ S2PointRegion::S2PointRegion(S2Point const& point) : point_(point) {
   DCHECK(S2::IsUnitLength(point));
 }
 
-#endif  // UTIL_GEOMETRY_S2POINTREGION_H__
+#endif  // S2_S2POINTREGION_H__

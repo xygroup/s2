@@ -6,15 +6,15 @@
 // See the vector3-inl.h file for more details
 
 
-#ifndef UTIL_MATH_VECTOR3_H__
-#define UTIL_MATH_VECTOR3_H__
+#ifndef S2_UTIL_MATH_VECTOR3_H__
+#define S2_UTIL_MATH_VECTOR3_H__
 
 #include <iostream>
 using std::ostream;
 using std::cout;
 using std::endl;
   // NOLINT(readability/streams)
-#include "base/basictypes.h"
+#include "s2/base/basictypes.h"
 
 template <typename VType> class Vector3;
 // TODO(user): Look into creating conversion operators to remove the
@@ -186,4 +186,4 @@ typedef Vector3<int>    Vector3_i;
 typedef Vector3<float>  Vector3_f;
 typedef Vector3<double> Vector3_d;
 
-#endif  // UTIL_MATH_VECTOR3_H__
+#endif  // S2_UTIL_MATH_VECTOR3_H__

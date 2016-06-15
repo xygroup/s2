@@ -1,14 +1,14 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2CELL_H_
-#define UTIL_GEOMETRY_S2CELL_H_
+#ifndef S2_S2CELL_H_
+#define S2_S2CELL_H_
 
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "s2.h"
-#include "s2cellid.h"
-#include "s2region.h"
-#include "util/math/vector2.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/s2.h"
+#include "s2/s2cellid.h"
+#include "s2/s2region.h"
+#include "s2/util/math/vector2.h"
 
 // An S2Cell is an S2Region object that represents a cell.  Unlike S2CellIds,
 // it supports efficient containment and intersection tests.  However, it is
@@ -135,4 +135,4 @@ inline double S2Cell::GetSizeST() const {
   return S2CellId::GetSizeST(level());
 }
 
-#endif  // UTIL_GEOMETRY_S2CELL_H_
+#endif  // S2_S2CELL_H_

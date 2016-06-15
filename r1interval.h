@@ -1,7 +1,7 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_R1INTERVAL_H_
-#define UTIL_GEOMETRY_R1INTERVAL_H_
+#ifndef S2_R1INTERVAL_H_
+#define S2_R1INTERVAL_H_
 
 #include <math.h>
 
@@ -16,9 +16,9 @@ using std::ostream;
 using std::cout;
 using std::endl;
 
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "util/math/vector2-inl.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/util/math/vector2-inl.h"
 
 // An R1Interval represents a closed, bounded interval on the real line.
 // It is capable of representing the empty interval (containing no points)
@@ -182,4 +182,4 @@ inline ostream& operator<<(ostream& os, R1Interval const& x) {
   return os << "[" << x.lo() << ", " << x.hi() << "]";
 }
 
-#endif  // UTIL_GEOMETRY_R1INTERVAL_H_
+#endif  // S2_R1INTERVAL_H_

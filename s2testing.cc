@@ -8,21 +8,21 @@
 using std::vector;
 
 
-#include "base/integral_types.h"
-#include "base/logging.h"
-#include "base/stringprintf.h"
-#include "util/math/matrix3x3-inl.h"
-#include "s2testing.h"
-#include "s2loop.h"
-#include "s2latlng.h"
-#include "s2latlngrect.h"
-#include "s2polygon.h"
-#include "s2polyline.h"
-#include "s2cellunion.h"
-#include "s2cell.h"
-#include "s2cap.h"
-#include "strings/split.h"
-#include "strings/strutil.h"
+#include "s2/base/integral_types.h"
+#include "s2/base/logging.h"
+#include "s2/base/stringprintf.h"
+#include "s2/util/math/matrix3x3-inl.h"
+#include "s2/s2testing.h"
+#include "s2/s2loop.h"
+#include "s2/s2latlng.h"
+#include "s2/s2latlngrect.h"
+#include "s2/s2polygon.h"
+#include "s2/s2polyline.h"
+#include "s2/s2cellunion.h"
+#include "s2/s2cell.h"
+#include "s2/s2cap.h"
+#include "s2/strings/split.h"
+#include "s2/strings/strutil.h"
 
 S2Testing::Random::Random() {
   srandom(4);

@@ -1,12 +1,12 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2.h"
+#include "s2/s2.h"
 
-#include "base/commandlineflags.h"
-#include "base/integral_types.h"
-#include "base/logging.h"
-#include "util/math/matrix3x3-inl.h"
-#include "util/math/vector2-inl.h"
+#include "s2/base/commandlineflags.h"
+#include "s2/base/integral_types.h"
+#include "s2/base/logging.h"
+#include "s2/util/math/matrix3x3-inl.h"
+#include "s2/util/math/vector2-inl.h"
 
 // Define storage for header file constants (the values are not needed
 // here for integral constants).

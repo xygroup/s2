@@ -1,13 +1,13 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2cell.h"
+#include "s2/s2cell.h"
 
-#include "base/integral_types.h"
-#include "base/logging.h"
-#include "s2.h"
-#include "s2cap.h"
-#include "s2latlngrect.h"
-#include "util/math/vector2-inl.h"
+#include "s2/base/integral_types.h"
+#include "s2/base/logging.h"
+#include "s2/s2.h"
+#include "s2/s2cap.h"
+#include "s2/s2latlngrect.h"
+#include "s2/util/math/vector2-inl.h"
 
 // Since S2Cells are copied by value, the following assertion is a reminder
 // not to add fields unnecessarily.  An S2Cell currently consists of 43 data

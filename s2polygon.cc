@@ -17,17 +17,17 @@ using std::multiset;
 using std::vector;
 
 
-#include "base/commandlineflags.h"
-#include "s2polygon.h"
+#include "s2/base/commandlineflags.h"
+#include "s2/s2polygon.h"
 
-#include "base/port.h"  // for HASH_NAMESPACE_DECLARATION_START
-#include "s2edgeindex.h"
-#include "s2cap.h"
-#include "s2cell.h"
-#include "s2cellunion.h"
-#include "s2latlngrect.h"
-#include "s2polygonbuilder.h"
-#include "s2polyline.h"
+#include "s2/base/port.h"  // for HASH_NAMESPACE_DECLARATION_START
+#include "s2/s2edgeindex.h"
+#include "s2/s2cap.h"
+#include "s2/s2cell.h"
+#include "s2/s2cellunion.h"
+#include "s2/s2latlngrect.h"
+#include "s2/s2polygonbuilder.h"
+#include "s2/s2polyline.h"
 
 DECLARE_bool(s2debug);  // defined in s2.cc
 

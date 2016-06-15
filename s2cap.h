@@ -1,12 +1,12 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#ifndef UTIL_GEOMETRY_S2CAP_H_
-#define UTIL_GEOMETRY_S2CAP_H_
+#ifndef S2_S2CAP_H_
+#define S2_S2CAP_H_
 
-#include "base/basictypes.h"
-#include "base/logging.h"
-#include "s1angle.h"
-#include "s2region.h"
+#include "s2/base/basictypes.h"
+#include "s2/base/logging.h"
+#include "s2/s1angle.h"
+#include "s2/s2region.h"
 
 // This class represents a spherical cap, i.e. a portion of a sphere cut off
 // by a plane.  The cap is defined by its axis and height.  This
@@ -167,4 +167,4 @@ inline S2Cap S2Cap::FromAxisArea(S2Point const& axis, double area) {
 
 ostream& operator<<(ostream& os, S2Cap const& cap);
 
-#endif  // UTIL_GEOMETRY_S2CAP_H_
+#endif  // S2_S2CAP_H_

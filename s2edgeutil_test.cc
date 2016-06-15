@@ -1,6 +1,6 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
 
-#include "s2edgeutil.h"
+#include "s2/s2edgeutil.h"
 
 #include <algorithm>
 using std::min;
@@ -17,13 +17,13 @@ using std::string;
 #include <vector>
 using std::vector;
 
+#include "gtest/gtest.h"
 
-#include "base/commandlineflags.h"
-#include "base/logging.h"
-#include "testing/base/public/gunit.h"
-#include "s2cap.h"
-#include "s2polyline.h"
-#include "s2testing.h"
+#include "s2/base/commandlineflags.h"
+#include "s2/base/logging.h"
+#include "s2/s2cap.h"
+#include "s2/s2polyline.h"
+#include "s2/s2testing.h"
 
 DECLARE_bool(s2debug);
 

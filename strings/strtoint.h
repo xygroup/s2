@@ -27,15 +27,15 @@
 // to provide the right overflow and errno behavior.
 //
 
-#ifndef BASE_STRTOINT_H_
-#define BASE_STRTOINT_H_
+#ifndef S2_STRINGS_STRTOINT_H_
+#define S2_STRINGS_STRTOINT_H_
 
 #include <stdlib.h> // For strtol* functions.
 #include <string>
 using std::string;
 
-#include "base/port.h"
-#include "base/basictypes.h"
+#include "s2/base/port.h"
+#include "s2/base/basictypes.h"
 
 // Adapter functions for handling overflow and errno.
 int32 strto32_adapter(const char *nptr, char **endptr, int base);
@@ -90,4 +90,4 @@ inline int64 atoi64(const string &s) {
   return atoi64(s.c_str());
 }
 
-#endif  // BASE_STRTOINT_H_
+#endif  // S2_STRINGS_STRTOINT_H_
