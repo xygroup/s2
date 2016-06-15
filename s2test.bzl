@@ -3,7 +3,10 @@ def s2test(name, deps=[], size="small"):
   native.cc_test(
       name=name,
       srcs=["%s.cc" % (name)],
-      copts = ["-Iexternal/gtest/include"],
+      copts = [
+          "-Iexternal/gtest/include",
+          "-DS2_TEST_DEGENERACIES",
+      ],
       deps = ["@gtest//:main", ":test"] + deps,
       size = size,
   )
