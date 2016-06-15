@@ -4,7 +4,7 @@
 
 #include "s2/s2latlng.h"
 #include "s2/base/macros.h"
-#include "s2/base/stringprintf.h"
+#include "s2/strings/stringprintf.h"
 #include "s2/strings/split.h"
 // #include "testing/base/public/benchmark.h"
 #include "s2/s2testing.h"

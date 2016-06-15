@@ -9,7 +9,7 @@ using std::unique_ptr;
 using std::vector;
 
 
-#include "gunit/gunit.h"
+#include "gtest/gtest.h"
 #include "s2/s2cap.h"
 #include "s2/s2cell.h"
 #include "s2/s2latlngrect.h"

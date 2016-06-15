@@ -10,7 +10,7 @@ using std::vector;
 
 #include "s2/base/integral_types.h"
 #include "s2/base/logging.h"
-#include "s2/base/stringprintf.h"
+#include "s2/strings/stringprintf.h"
 #include "s2/util/math/matrix3x3-inl.h"
 #include "s2/s2testing.h"
 #include "s2/s2loop.h"

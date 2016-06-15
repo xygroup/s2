@@ -11,7 +11,7 @@ using std::vector;
 #include "gtest/gtest.h"
 
 #include "s2/base/commandlineflags.h"
-#include "s2/base/stringprintf.h"
+#include "s2/strings/stringprintf.h"
 #include "s2/s2cell.h"
 #include "s2/s2latlng.h"
 #include "s2/s2testing.h"
