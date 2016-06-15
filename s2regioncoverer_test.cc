@@ -26,7 +26,7 @@ using std::vector;
 
 #include "s2/base/commandlineflags.h"
 #include "s2/base/logging.h"
-#include "s2/base/strtoint.h"
+#include "s2/strings/strtoint.h"
 #include "s2/strings/split.h"
 #include "s2/strings/stringprintf.h"
 #include "s2/s2cap.h"

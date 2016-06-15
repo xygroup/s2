@@ -9,7 +9,7 @@ using std::numeric_limits;
 #include "s2/base/integral_types.h"
 #include "s2/base/logging.h"
 #include "s2/base/macros.h"
-#include "s2/base/strtoint.h"
+#include "s2/strings/strtoint.h"
 #include "s2/strings/split.h"
 #include "s2/strings/strutil.h"
 #include "s2/util/hash/hash_jenkins_lookup2.h"
