@@ -20,15 +20,15 @@ DECLARE_bool(s2debug);
 
 namespace {
 
-S2Polyline* MakePolyline(string const& str) {
-  unique_ptr<S2Polyline> polyline(S2Testing::MakePolyline(str));
-  Encoder encoder;
-  polyline->Encode(&encoder);
-  Decoder decoder(encoder.base(), encoder.length());
-  unique_ptr<S2Polyline> decoded_polyline(new S2Polyline);
-  decoded_polyline->Decode(&decoder);
-  return decoded_polyline.release();
-}
+// S2Polyline* MakePolyline(string const& str) {
+//   unique_ptr<S2Polyline> polyline(S2Testing::MakePolyline(str));
+//   Encoder encoder;
+//   polyline->Encode(&encoder);
+//   Decoder decoder(encoder.base(), encoder.length());
+//   unique_ptr<S2Polyline> decoded_polyline(new S2Polyline);
+//   decoded_polyline->Decode(&decoder);
+//   return decoded_polyline.release();
+// }
 
 TEST(S2Polyline, Basic) {
   vector<S2Point> vertices;
@@ -279,7 +279,7 @@ void CheckSubsample(char const* polyline_str, double tolerance_degrees,
                     char const* expected_str) {
   SCOPED_TRACE(StringPrintf("\"%s\", tolerance %f",
                             polyline_str, tolerance_degrees));
-  unique_ptr<S2Polyline> polyline(MakePolyline(polyline_str));
+  unique_ptr<S2Polyline> polyline(S2Testing::MakePolyline(polyline_str));
   vector<int> indices;
   polyline->SubsampleVertices(S1Angle::Degrees(tolerance_degrees), &indices);
   EXPECT_EQ(expected_str, JoinInts(indices));
@@ -344,8 +344,8 @@ TEST(S2Polyline, SubsampleVerticesGuarantees) {
 static bool TestEquals(char const* a_str,
                        char const* b_str,
                        double max_error) {
-  unique_ptr<S2Polyline> a(MakePolyline(a_str));
-  unique_ptr<S2Polyline> b(MakePolyline(b_str));
+  unique_ptr<S2Polyline> a(S2Testing::MakePolyline(a_str));
+  unique_ptr<S2Polyline> b(S2Testing::MakePolyline(b_str));
   return a->ApproxEquals(b.get(), max_error);
 }
 
@@ -369,15 +369,15 @@ TEST(S2Polyline, ApproxEquals) {
   EXPECT_FALSE(TestEquals("0:0, 5:5, 0:10", "5:5, 0:10, 0:0", 0.1 * degree));
 }
 
-TEST(S2Polyline, EncodeDecode) {
-  unique_ptr<S2Polyline> polyline(MakePolyline("0:0, 0:10, 10:20, 20:30"));
-  Encoder encoder;
-  polyline->Encode(&encoder);
-  Decoder decoder(encoder.base(), encoder.length());
-  S2Polyline decoded_polyline;
-  EXPECT_TRUE(decoded_polyline.Decode(&decoder));
-  EXPECT_TRUE(decoded_polyline.ApproxEquals(polyline.get(), 0));
-}
+// TEST(S2Polyline, EncodeDecode) {
+//   unique_ptr<S2Polyline> polyline(MakePolyline("0:0, 0:10, 10:20, 20:30"));
+//   Encoder encoder;
+//   polyline->Encode(&encoder);
+//   Decoder decoder(encoder.base(), encoder.length());
+//   S2Polyline decoded_polyline;
+//   EXPECT_TRUE(decoded_polyline.Decode(&decoder));
+//   EXPECT_TRUE(decoded_polyline.ApproxEquals(polyline.get(), 0));
+// }
 
 void TestNearlyCovers(string const& a_str, string const& b_str,
                       double max_error_degrees, bool expect_b_covers_a,
