@@ -33,11 +33,18 @@ cc_library(
     ],
     hdrs = glob(["*.h", "base/*.h", "strings/*.h", "util/math/*.h"]) + ["util/hash/hash_jenkins_lookup2.h"],
     copts = [
+        "-Wall",
+        "-Wwrite-strings",
+        "-Woverloaded-virtual",
+        "-Wno-sign-compare",
+        "-DS2_USE_EXACTFLOAT",
+        "-DHASH_NAMESPACE=std",
         "-Wno-absolute-value",
         "-Wno-dynamic-class-memaccess",
         "-stdlib=libc++",
         "-std=c++11",
     ],
+    # deps = ["//openssl"],
     visibility = ["//visibility:public"],
 )
 
