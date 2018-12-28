@@ -54,7 +54,7 @@ cc_library(
     deps = [":s2"],
 )
 
-load("s2test", "s2test")
+load("//s2:s2test.bzl", "s2test")
 
 s2test("r1interval_test")
 s2test("s1angle_test")
