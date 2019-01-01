@@ -9,6 +9,6 @@ def s2test(name, deps=[], size="small"):
             "-Iexternal/gtest/include",
             "-DS2_TEST_DEGENERACIES",
         ],
-        deps = ["//gtest:gtest_main", ":test"] + deps,
+        deps = ["@gtest//:gtest_main", ":test"] + deps,
         size = size,
     )
